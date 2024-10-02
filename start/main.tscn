@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck2g1dbq0ftuw"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_l207c"]
+[ext_resource type="Texture2D" uid="uid://dlvyimwxaap60" path="res://assets/sprites/character/character02.png" id="1_vgywx"]
+
+[node name="Main" type="Node"]
+
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource("1_l207c")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(93, 60)
+scale = Vector2(3, 3)
+texture = ExtResource("1_vgywx")
+
+[node name="HealthLabel" type="Label" parent="Player"]
+offset_left = 72.0
+offset_top = 12.0
+offset_right = 115.0
+offset_bottom = 35.0
+text = "10/10"
