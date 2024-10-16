@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728346718
+::res://::1729022557
 default_env.tres::Environment::-1::1727822063::0::1::::<><>::
 icon.png::CompressedTexture2D::7388305380871373323::1727822063::1727822563::1::::<><>::
-main.tscn::PackedScene::5530878895599715202::1728089028::0::1::::<><>::res://player.gd<>uid://dlvyimwxaap60::::res://assets/sprites/character/character02.png
+main.tscn::PackedScene::5530878895599715202::1728356188::0::1::::<><>::res://player.gd<>uid://dlvyimwxaap60::::res://assets/sprites/character/character02.png
 player.gd::GDScript::-1::1728088176::0::1::::<>Node2D<>::
 ::res://assets/::1727822539
 ::res://assets/sprites/::1727822539

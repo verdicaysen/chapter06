@@ -46,8 +46,10 @@ rotation = 3.13687
 color = Color(0.331639, 0.331639, 0.331639, 1)
 polygon = PackedVector2Array(15.6218, 80.0748, 12.274, 577.064, -261, 568, -261.392, 505.771, -43.3994, 507.801, -44, 80)
 
-[node name="Player" type="Node2D" parent="."]
+[node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("1_l207c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(526, 270)
@@ -55,8 +57,9 @@ scale = Vector2(3, 3)
 texture = ExtResource("1_vgywx")
 
 [node name="HealthLabel" type="Label" parent="Player"]
-offset_left = 72.0
-offset_top = 12.0
-offset_right = 115.0
-offset_bottom = 35.0
+offset_left = 507.0
+offset_top = 215.0
+offset_right = 544.0
+offset_bottom = 239.0
+theme_override_font_sizes/font_size = 14
 text = "10/10"
