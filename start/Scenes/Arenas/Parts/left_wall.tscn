@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c4bmr3f8p50oe"]
+
+[node name="LeftWall" type="Polygon2D"]
+position = Vector2(149, -30)
+color = Color(0.331639, 0.331639, 0.331639, 1)
+polygon = PackedVector2Array(14, 79, 15, 576, -259, 576, -259, 504, -41, 508, -44, 80)

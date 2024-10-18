@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://df45k3n0r5qd4"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_g4tkb"]
+[ext_resource type="Texture2D" uid="uid://dlvyimwxaap60" path="res://assets/sprites/character/character02.png" id="2_0muct"]
+[ext_resource type="Script" path="res://Scenes/Player/camera_position.gd" id="3_7chbm"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mf4qf"]
+radius = 24.0
+height = 48.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_g4tkb")
+max_speed = 400.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_mf4qf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("2_0muct")
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = -19.0
+offset_top = -43.0
+offset_right = 19.0
+offset_bottom = -23.0
+theme_override_font_sizes/font_size = 14
+text = "10/10"
+
+[node name="CameraPosition" type="Node2D" parent="."]
+script = ExtResource("3_7chbm")
+camera_distance = 500.0
+
+[node name="Camera2D" type="Camera2D" parent="CameraPosition"]
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+editor_draw_drag_margin = true

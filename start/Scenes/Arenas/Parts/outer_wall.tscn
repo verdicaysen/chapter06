@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ih43bpye1iml"]
+
+[node name="OuterWall" type="Polygon2D"]
+position = Vector2(67.6266, -4.11632)
+scale = Vector2(1.30102, 1.14282)
+color = Color(0.15967, 0.15967, 0.15967, 1)
+invert_enabled = true
+invert_border = 1039.2
+polygon = PackedVector2Array(-430.04, -247.532, -434.757, 965.26, 1150.93, 976.636, 1171.68, -249.282)

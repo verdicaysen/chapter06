@@ -1,0 +1,30 @@
+[gd_scene load_steps=9 format=3 uid="uid://ck2g1dbq0ftuw"]
+
+[ext_resource type="PackedScene" uid="uid://ih43bpye1iml" path="res://Scenes/Arenas/Parts/outer_wall.tscn" id="1_cwjig"]
+[ext_resource type="PackedScene" uid="uid://bm6blhrfmpi6s" path="res://Scenes/Arenas/Parts/boulder.tscn" id="2_s8afg"]
+[ext_resource type="PackedScene" uid="uid://cgxpcn3e1kixr" path="res://Scenes/Arenas/Parts/boulder_2.tscn" id="3_wxwkf"]
+[ext_resource type="PackedScene" uid="uid://dop4ndavykbuu" path="res://Scenes/Arenas/Parts/boulder_3.tscn" id="4_arr74"]
+[ext_resource type="PackedScene" uid="uid://dbvxwj4mt0vhf" path="res://Scenes/Arenas/Parts/boulder_4.tscn" id="5_6jf6k"]
+[ext_resource type="PackedScene" uid="uid://c4bmr3f8p50oe" path="res://Scenes/Arenas/Parts/left_wall.tscn" id="6_dwvwr"]
+[ext_resource type="PackedScene" uid="uid://d2ej3l3dq37sg" path="res://Scenes/Arenas/Parts/right_wall.tscn" id="7_nrqti"]
+[ext_resource type="PackedScene" uid="uid://df45k3n0r5qd4" path="res://Scenes/Player/player.tscn" id="8_8h1co"]
+
+[node name="Main" type="Node"]
+
+[node name="Arena" type="Node2D" parent="."]
+
+[node name="OuterWall" parent="Arena" instance=ExtResource("1_cwjig")]
+
+[node name="Boulder" parent="Arena" instance=ExtResource("2_s8afg")]
+
+[node name="Boulder2" parent="Arena" instance=ExtResource("3_wxwkf")]
+
+[node name="Boulder3" parent="Arena" instance=ExtResource("4_arr74")]
+
+[node name="Boulder4" parent="Arena" instance=ExtResource("5_6jf6k")]
+
+[node name="LeftWall" parent="Arena" instance=ExtResource("6_dwvwr")]
+
+[node name="RightWall" parent="Arena" instance=ExtResource("7_nrqti")]
+
+[node name="Player" parent="." instance=ExtResource("8_8h1co")]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=8 format=3 uid="uid://povjoixgbp4p"]
+
+[ext_resource type="PackedScene" uid="uid://ih43bpye1iml" path="res://Scenes/Arenas/Parts/outer_wall.tscn" id="1_jf4p2"]
+[ext_resource type="PackedScene" uid="uid://bm6blhrfmpi6s" path="res://Scenes/Arenas/Parts/boulder.tscn" id="2_q0pqw"]
+[ext_resource type="PackedScene" uid="uid://cgxpcn3e1kixr" path="res://Scenes/Arenas/Parts/boulder_2.tscn" id="3_xvefu"]
+[ext_resource type="PackedScene" uid="uid://dop4ndavykbuu" path="res://Scenes/Arenas/Parts/boulder_3.tscn" id="4_8upxt"]
+[ext_resource type="PackedScene" uid="uid://dbvxwj4mt0vhf" path="res://Scenes/Arenas/Parts/boulder_4.tscn" id="5_1t0ip"]
+[ext_resource type="PackedScene" uid="uid://c4bmr3f8p50oe" path="res://Scenes/Arenas/Parts/left_wall.tscn" id="6_712bn"]
+[ext_resource type="PackedScene" uid="uid://d2ej3l3dq37sg" path="res://Scenes/Arenas/Parts/right_wall.tscn" id="7_eqe4t"]
+
+[node name="Arena" type="Node2D"]
+
+[node name="OuterWall" parent="." instance=ExtResource("1_jf4p2")]
+
+[node name="Boulder" parent="." instance=ExtResource("2_q0pqw")]
+
+[node name="Boulder2" parent="." instance=ExtResource("3_xvefu")]
+
+[node name="Boulder3" parent="." instance=ExtResource("4_8upxt")]
+
+[node name="Boulder4" parent="." instance=ExtResource("5_1t0ip")]
+
+[node name="LeftWall" parent="." instance=ExtResource("6_712bn")]
+
+[node name="RightWall" parent="." instance=ExtResource("7_eqe4t")]

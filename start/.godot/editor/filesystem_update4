@@ -1,2 +1,5 @@
-res://main.tscn
-res://player.gd
+res://Scenes/Screens/main.tscn
+res://Scenes/Arenas/Parts/right_wall.tscn
+res://Scenes/Player/player.tscn
+res://Scenes/Arenas/arena.tscn
+res://Scenes/Player/camera_position.gd

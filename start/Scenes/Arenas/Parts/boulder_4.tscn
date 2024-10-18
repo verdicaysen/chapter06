@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dbvxwj4mt0vhf"]
+
+[node name="Boulder4" type="Polygon2D"]
+position = Vector2(242, 472)
+color = Color(0.401968, 0.401968, 0.401968, 1)
+polygon = PackedVector2Array(104, -122, 159, -76, 119, -22, 57, -41, 63, -88)

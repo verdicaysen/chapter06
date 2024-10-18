@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d2ej3l3dq37sg"]
+
+[node name="RightWall" type="Polygon2D"]
+position = Vector2(922, 615)
+rotation = 3.13687
+color = Color(0.331639, 0.331639, 0.331639, 1)
+polygon = PackedVector2Array(15.6218, 80.0748, 12.274, 577.064, -261, 568, -261.392, 505.771, -43.3994, 507.801, -44, 80)
