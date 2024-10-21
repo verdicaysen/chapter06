@@ -4,3 +4,7 @@
 position = Vector2(242, 472)
 color = Color(0.401968, 0.401968, 0.401968, 1)
 polygon = PackedVector2Array(104, -122, 159, -76, 119, -22, 57, -41, 63, -88)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
