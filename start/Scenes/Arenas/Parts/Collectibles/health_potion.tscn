@@ -1,17 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://b76lcyebr0pe8"]
+[gd_scene load_steps=5 format=3 uid="uid://dap5utyxm07u2"]
 
 [ext_resource type="Texture2D" uid="uid://dtcu32oasjseu" path="res://assets/sprites/collectibles/health_potion.png" id="1_4rhn7"]
+[ext_resource type="PackedScene" uid="uid://35oygpdlbc66" path="res://Scenes/Arenas/Parts/Collectibles/collectible_base.tscn" id="1_h6uia"]
+[ext_resource type="Script" path="res://Scenes/Arenas/Parts/Collectibles/health_potion.gd" id="2_2tunn"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x3ti3"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dmvg6"]
 height = 32.0
 
-[node name="HealthPotion" type="Node2D"]
+[node name="CollectibleBase" instance=ExtResource("1_h6uia")]
+script = ExtResource("2_2tunn")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(2, 2)
+[node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("1_4rhn7")
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CapsuleShape2D_x3ti3")
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+shape = SubResource("CapsuleShape2D_dmvg6")

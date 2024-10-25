@@ -11,4 +11,4 @@ res://Scenes/Arenas/Parts/boulder_2.tscn
 res://Scenes/Arenas/Parts/boulder_3.tscn
 res://Scenes/Arenas/Parts/boulder_4.tscn
 res://Scenes/Arenas/Parts/Collectibles/health_potion.tscn
-res://Scripts/player.gd
+res://Scenes/Arenas/Parts/Collectibles/health_potion.gd
