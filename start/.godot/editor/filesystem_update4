@@ -1,3 +1,5 @@
+res://Scenes/Arenas/Parts/Collectibles/collectible_base.tscn
+res://Scenes/Arenas/Parts/Collectibles/collectible.gd
 res://Scenes/Screens/main.tscn
 res://Scenes/Arenas/Parts/right_wall.tscn
 res://Scenes/Player/player.tscn
@@ -8,4 +10,5 @@ res://Scenes/Arenas/Parts/boulder.tscn
 res://Scenes/Arenas/Parts/boulder_2.tscn
 res://Scenes/Arenas/Parts/boulder_3.tscn
 res://Scenes/Arenas/Parts/boulder_4.tscn
+res://Scenes/Arenas/Parts/Collectibles/health_potion.tscn
 res://Scripts/player.gd

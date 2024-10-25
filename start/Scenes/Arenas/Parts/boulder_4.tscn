@@ -8,3 +8,4 @@ polygon = PackedVector2Array(104, -122, 159, -76, 119, -22, 57, -41, 63, -88)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(103, -121, 158, -75, 119, -22, 55, -41, 64, -88)
