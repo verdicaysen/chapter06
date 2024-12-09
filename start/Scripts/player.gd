@@ -2,6 +2,8 @@ extends CharacterBody2D
 
  # This is constant which means we cant do cool things like add to it to increase max health during the game. But whatever.
 const MAX_HEALTH: int = 10
+@export var coins: int = 0
+@onready var _coins_label: Label = $CoinLabel
 
 # Let's cache HealthLabel instead so we're improving performance. We don't need you to constantly search for the node.
 @onready var _health_label: Label = $HealthLabel
@@ -21,6 +23,8 @@ const MAX_HEALTH: int = 10
 func _ready():
 	print(health)
 	update_health_label()
+	print(coins)
+	
 	
 func _physics_process(delta: float):
 	var input_direction: Vector2 = Input.get_vector("move_left", "move_right", "move_up", "move_down")
@@ -33,6 +37,14 @@ func _physics_process(delta: float):
 # We are adding health points via a function, and clamping it to the maximum health constant, then updating it in the UI with the update health label function.
 func add_health_points(difference: int):
 	health += difference
+
+func add_coins(difference: int):
+	coins += difference
+
+func update_coins_label():
+	if not is_instance_valid(_coins_label):
+		return
+	_coins_label.text = str(coins)
 
 # This is a function to update the string in Health Label to the accurate number based on the variables.
 func update_health_label():

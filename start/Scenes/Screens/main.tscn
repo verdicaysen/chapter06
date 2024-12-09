@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ck2g1dbq0ftuw"]
+[gd_scene load_steps=10 format=3 uid="uid://ck2g1dbq0ftuw"]
 
 [ext_resource type="PackedScene" uid="uid://ih43bpye1iml" path="res://Scenes/Arenas/Parts/outer_wall.tscn" id="1_cwjig"]
 [ext_resource type="PackedScene" uid="uid://bm6blhrfmpi6s" path="res://Scenes/Arenas/Parts/boulder.tscn" id="2_s8afg"]
@@ -9,9 +9,17 @@
 [ext_resource type="PackedScene" uid="uid://d2ej3l3dq37sg" path="res://Scenes/Arenas/Parts/right_wall.tscn" id="7_nrqti"]
 [ext_resource type="PackedScene" uid="uid://df45k3n0r5qd4" path="res://Scenes/Player/player.tscn" id="8_8h1co"]
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_sgfmd"]
+vertices = PackedVector2Array(-447.906, 1045.19, 205, 587, 867.531, 576.281, 1004.84, 575.633, 1515.61, 1054.8, 801.953, 355.023, 864.813, 1.20313, 775.844, 509.961, 814, 142.672, 753.242, 270.063, 1219.49, 148.789, 1218.78, -1.46094, 1503.37, -231.094, -445.078, -235.898, 869, 0.1875, 772.359, 48.0391, 643.867, 181.328, 599.133, 316.461, 494.602, 221.938, 521.648, 99.1875, 656.602, 64.8672, 1002.81, 149.813, 66, 587, 66, 11, 66, 437, -150, 437, -150, 586, 66, 586, 205, 11, 869, 1.17188, 372.07, 45.7734, 537.75, 385.75, 454.5, 390.43, 344.852, 298.727, 296.648, 234.953, 269.367, 362.594, 591.172, 545.992, 376.563, 496.344, 250.898, 459.039, 258.297, 117.883)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 2, 7), PackedInt32Array(8, 6, 5), PackedInt32Array(9, 8, 5), PackedInt32Array(10, 11, 12, 4), PackedInt32Array(13, 12, 11, 14), PackedInt32Array(6, 8, 15), PackedInt32Array(16, 9, 5, 17, 18, 19), PackedInt32Array(19, 20, 16), PackedInt32Array(3, 21, 10, 4), PackedInt32Array(22, 1, 0), PackedInt32Array(23, 24, 25, 13), PackedInt32Array(26, 27, 22, 0), PackedInt32Array(26, 0, 13, 25), PackedInt32Array(28, 23, 13, 14, 6), PackedInt32Array(14, 29, 6), PackedInt32Array(28, 6, 15, 20, 30), PackedInt32Array(18, 17, 31, 32, 33, 34), PackedInt32Array(34, 33, 35), PackedInt32Array(32, 31, 36, 37), PackedInt32Array(36, 7, 2), PackedInt32Array(36, 2, 1), PackedInt32Array(37, 36, 1), PackedInt32Array(38, 37, 1), PackedInt32Array(38, 1, 28, 35), PackedInt32Array(34, 35, 28, 39), PackedInt32Array(30, 39, 28), PackedInt32Array(30, 20, 19)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-485, -276, -488, 1085, 1556, 1095, 1543, -271)])
+parsed_geometry_type = 1
+source_geometry_mode = 1
+agent_radius = 40.0
+
 [node name="Main" type="Node"]
 
-[node name="Arena" type="Node2D" parent="."]
+[node name="Arena" type="Node2D" parent="." groups=["navigation_polygon_source_geometry_group"]]
 
 [node name="OuterWall" parent="Arena" instance=ExtResource("1_cwjig")]
 
@@ -28,3 +36,6 @@
 [node name="RightWall" parent="Arena" instance=ExtResource("7_nrqti")]
 
 [node name="Player" parent="." instance=ExtResource("8_8h1co")]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." groups=["navigation_polygon_source_geometry_group"]]
+navigation_polygon = SubResource("NavigationPolygon_sgfmd")
