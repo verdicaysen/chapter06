@@ -1,4 +1,4 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
  # This is constant which means we cant do cool things like add to it to increase max health during the game. But whatever.
 const MAX_HEALTH: int = 10
